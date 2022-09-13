@@ -1,3 +1,30 @@
+$primaryTextColor: #040404;
+$secondaryTextColor: #888;
+$primaryAccent: #2bbffa;
+
 .home{
-    background-color: purple;
+    display: flex;
+
+    .home--container{
+        flex: 6;
+
+        .widgets{
+            display: flex;
+            padding: 24px;
+            gap: 24px;
+        }
+
+        .list--container{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            padding: 24px;
+            margin: 24px;
+
+            .list--title{
+                font-weight: 500;
+                color: $secondaryTextColor;
+                margin-bottom: 16px;
+            }
+        }
+    }
 }
