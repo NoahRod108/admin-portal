@@ -29,7 +29,9 @@ $primaryAccent: #2bbffa;
 
         .link{
             font-size: 12px;
+            cursor: pointer;
             border-bottom: 1px solid gray;
+            color: $secondaryTextColor;
         }
 
         .icon{

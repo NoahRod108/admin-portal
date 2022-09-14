@@ -2,6 +2,7 @@ import React from 'react';
 import "./datatable.scss";
 import { DataGrid } from '@mui/x-data-grid';
 import { userColumns, userRows } from '../../datasource';
+import { Link } from 'react-router-dom';
 
 export const Datatable = () => {
   const actionColumn = [
@@ -12,7 +13,9 @@ export const Datatable = () => {
       renderCell:() => {
         return(
           <div className="action">
-            <div className="view--item">View</div>
+            <Link to="/users/temp" style={{textDecoration:"none"}}>
+                <div className="view--item">View</div>
+            </Link>
             <div className="delete--item">Delete</div>
           </div>
         );

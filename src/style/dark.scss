@@ -1,0 +1,56 @@
+$primaryTextColor: #fff;
+$primaryAccent: #2bbffa;
+$primaryBackgroundColor: #18181b;
+$secondaryBackgroundColor: #27272c;
+$secondaryTextColor: #a4a4a4;
+
+.dark{
+    background-color: $primaryBackgroundColor;
+    color: $primaryTextColor;
+
+    .navbar{
+        border-bottom: 0.5px solid #fff;
+    }
+
+    .sidebar{
+        background-color: $secondaryBackgroundColor;
+        border: 1px solid $secondaryBackgroundColor;
+
+        hr{
+            border-bottom: 0.5px solid $secondaryBackgroundColor;
+        }
+
+        ul{
+            li{
+                &:hover{
+                    background-color: #333;
+                }
+            }
+        }
+    }
+
+    .widget{
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.158);
+    }
+
+    .table{
+        background-color: $secondaryBackgroundColor;
+
+        .tablecell{
+            color: #fff;
+        }
+    }
+
+    .status{
+        &.athlete{
+            color: #fff;
+            background-color: rgba(0, 128, 0, 0.6);
+        }
+
+        &.non--athlete{
+            color: #fff;
+            background-color: rgba(255, 0, 0, 0.6);
+        }
+    }
+}

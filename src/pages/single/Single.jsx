@@ -2,6 +2,7 @@ import React from 'react'
 import "./single.scss";
 import { Sidebar } from './../../components/sidebar/Sidebar';
 import { Navbar } from './../../components/navbar/Navbar';
+import { Datatable } from './../../components/datatable/Datatable';
 
 export const Single = () => {
   return (
@@ -18,23 +19,36 @@ export const Single = () => {
               <div className="details">
                 <h1 className="person--name">user1</h1>
                 <div className="person--details">
-                  <span className="person--id">12345457</span>
+                  <span className="person--id">ID: 12345457</span>
                 </div>
                 <div className="person--details">
-                  <span className="person--email">email</span>
+                  <span className="person--email">Email: email</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="right">
+            <div className="edit">Edit</div>
             <h1 className="title">Positions</h1>
-            <div className="position--info"></div>
+            <div className="positions">
+                <div className="details">
+                    <div className="position">Position: Tech Support</div>
+                    <div className="superviosr">Supervisor: supervisor 1</div>
+                </div>
+
+                <div className="details">
+                    <div className="position">Position: Help Desk</div>
+                    <div className="superviosr">Supervisor: supervisor 2</div>
+                </div>
+            </div>
           </div>
         </div>
 
         <div className="bottom">
-
+            <div className="users--table">
+                <Datatable/>
+            </div>
         </div>
       </div>
     </div>

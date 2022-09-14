@@ -1,8 +1,56 @@
+$primaryTextColor: #040404;
+$secondaryTextColor: #888;
+$primaryAccent: rgb(43, 191, 250);
+$primaryAccentBackground: rgba(43, 191, 250, 0.2);
+
 .list{
     display: flex;
     width: 100%;
 
     .list--container{
         flex: 6;
+
+        .top, .bottom{
+            padding: 12px;
+            margin: 12px;
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            display: flex;
+
+            h1{
+                color: $secondaryTextColor;
+                font-size: 20px;
+            }
+
+            .user--table{
+                width: 100%;
+            }
+
+            .postion--list{
+                padding: 0 16px;
+            }
+
+            .add--container{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+
+                .add--user{
+                    color: green;
+                    cursor: pointer;
+                    padding: 8px;
+                    border: 1px solid green;
+                    border-radius: 5px;
+                    background-color: rgba(0, 128, 0, 0.2);
+                    transition: all .5s ease;
+
+                    &:hover{
+                        color: #fff;
+                        background-color: green;
+                    }
+                }
+            }
+        }
     }
 }

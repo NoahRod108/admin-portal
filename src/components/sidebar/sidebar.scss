@@ -48,6 +48,7 @@ $primaryAccent: #2bbffa;
                 align-items: center;
                 padding: 8px;
                 cursor: pointer;
+                transition: all .5s ease;
 
                 &:hover{
                     background-color: #cef0fd;

@@ -4,10 +4,11 @@ import { Login } from "./pages/login/Login";
 import { Single } from "./pages/single/Single";
 import { New } from "./pages/new/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./style/dark.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app dark">
       <BrowserRouter>
         <Routes>
           <Route path="/">
@@ -18,18 +19,9 @@ function App() {
               <Route>
                 <Route index element={<List />} />
                 <Route path=":userId" element={<Single />} />
-                <Route path="new" element={<New />} />
+                <Route path="new" element={<New title="Add New User"/>} />
               </Route>
             </Route>
-
-            <Route path="products">
-              <Route>
-                <Route index element={<List />} />
-                <Route path=":productId" element={<Single />} />
-                <Route path="new" element={<New />} />
-              </Route>
-            </Route>
-
           </Route>
         </Routes>
       </BrowserRouter>

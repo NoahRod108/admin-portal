@@ -1,0 +1,73 @@
+$primaryTextColor: #040404;
+$secondaryTextColor: #888;
+$primaryAccent: rgb(43, 191, 250);
+$primaryAccentBackground: rgba(43, 191, 250, 0.2);
+
+.new{
+    width:  100%;
+    display: flex;
+
+    .new--container{
+        flex: 6;
+
+        .top, .bottom{
+            padding: 12px;
+            margin: 12px;
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            display: flex;
+
+            h1{
+                color: $secondaryTextColor;
+                font-size: 20px;
+            }
+
+            .left{
+                flex: .5;
+            }
+
+            .right{
+                flex: 1;
+
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .form--input{
+                        width: 50%;
+                        
+                        input{
+                            width: 100%;
+                            border: none;
+                            border-bottom: 1px solid #ccc;
+                            padding: 5px;
+                            outline: none;
+                            background-color: transparent;
+
+                            &:focus-within{
+                                border-bottom: 0.5px solid $primaryAccent;
+                            }
+                        }
+                    }
+
+                    button{
+                        width: 150px;
+                        padding: 8px;
+                        background-color: #fff;
+                        border: .5px solid $primaryAccent;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        transition: all .5s ease;
+
+                        &:hover{
+                            background-color: $primaryAccent;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

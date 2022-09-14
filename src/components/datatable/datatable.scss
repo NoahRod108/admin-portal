@@ -50,6 +50,7 @@ $primaryAccent: rgb(43, 191, 250);
             border: 1px solid $primaryAccent;
             color: $primaryAccent;
             cursor: pointer;
+            transition: all .5s ease;
 
             &:hover{
                 background-color: rgb(43, 191, 250, 0.2);
@@ -62,6 +63,7 @@ $primaryAccent: rgb(43, 191, 250);
             border: 1px solid rgb(255, 0, 0);
             color: rgb(255, 0, 0);
             cursor: pointer;
+            transition: all .5s ease;
 
             &:hover{
                 background-color: rgb(255, 0, 0, 0.2);
