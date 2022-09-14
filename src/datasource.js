@@ -1,6 +1,31 @@
+import CheckIcon from '@mui/icons-material/Check';
+import CloseIcon from '@mui/icons-material/Close';
+
 export const userColumns = [
-    {
-        
+    { field: 'id', headerName: 'ID', width: 120 },
+    { 
+        field: 'user', 
+        headerName: 'USER',
+        width: 230, 
+        renderCell: (params)=>{
+            return(
+                <div className="avatar--cell">
+                    <img src={params.row.img} alt="" className="cell--image" />
+                    {params.row.name}
+                </div>
+            );
+        }
+    },
+    { field: 'email', headerName: 'EMAIL', width: 150 },
+    { field: 'pronoun', headerName: 'PRONOUN', width: 100 },
+    { field: 'athlete', headerName: 'ATHLETE', width: 100, 
+        renderCell: (params)=>{
+            return(
+                <div className="athlete--status">
+                    { params.row.athlete === false ? <CheckIcon className="status athlete"/> :  <CloseIcon className="status non--athlete"/> }
+                </div>
+            );
+        }
     },
 ];
 
@@ -33,7 +58,7 @@ export const userRows = [
         id: 369258147,
         img: "https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         name: "user 4",
-        email: "tes4t@test.com",
+        email: "test4@test.com",
         pronoun: "They/Them",
         athlete: false,
     },

@@ -1,4 +1,71 @@
+$primaryTextColor: rgb(4, 4, 4);
+$secondaryTextColor: rgb(136, 136, 136);
+$primaryAccent: rgb(43, 191, 250);
+
 .datatable{
     height: 600px;
     padding: 16px;
+
+    .avatar--cell{
+        display: flex;
+        align-items: center;
+
+        .cell--image{
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    }
+
+    .athlete--status{
+        display: flex;
+        align-items: center;
+
+        .status{
+            padding: 8px;
+            border-radius: 50%;
+    
+            &.athlete{
+                color: rgb(0, 150, 0);
+                background-color: rgb(0, 150, 0, .2);
+            }
+    
+            &.non--athlete{
+                color: rgb(150, 0, 0);
+                background-color: rgb(150, 0, 0, .2);
+            }
+        }
+    }
+
+    .action{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        .view--item{
+            padding: 2px 5px;
+            border-radius: 5px;
+            border: 1px solid $primaryAccent;
+            color: $primaryAccent;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(43, 191, 250, 0.2);
+            }
+        }
+
+        .delete--item{
+            padding: 2px 5px;
+            border-radius: 5px;
+            border: 1px solid rgb(255, 0, 0);
+            color: rgb(255, 0, 0);
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(255, 0, 0, 0.2);
+            }
+        }
+    }
 }
