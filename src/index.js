@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { DarkModeContextProvider } from './context/darkModeContext';
 
 /* TODO
   - login page
@@ -12,6 +13,8 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <DarkModeContextProvider>
+        <App />
+    </DarkModeContextProvider>
   </React.StrictMode>
 );

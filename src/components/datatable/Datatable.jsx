@@ -10,7 +10,7 @@ export const Datatable = () => {
       field: "action", 
       headerName: "Action", 
       width: 200, 
-      renderCell:() => {
+      renderCell:(params) => {
         return(
           <div className="action">
             <Link to="/users/temp" style={{textDecoration:"none"}}>
@@ -26,6 +26,7 @@ export const Datatable = () => {
   return (
     <div className="datatable">
         <DataGrid
+        className='user--datatable'
         rows={userRows}
         columns={userColumns.concat(actionColumn)}
         pageSize={10}

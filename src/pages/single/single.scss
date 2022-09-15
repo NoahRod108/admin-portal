@@ -22,20 +22,6 @@ $primaryAccentBackground: rgba(43, 191, 250, 0.2);
                 box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
                 position: relative;
 
-                .edit{
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    padding: 8px;
-                    color: $primaryAccent;
-                    border-radius: 0 0 0 5px;
-                    cursor: pointer;
-                    
-                    &:hover{
-                        background-color: $primaryAccentBackground;
-                    }
-                }
-
                 .person{
                     display: flex;
                     gap: 20px;
@@ -68,20 +54,6 @@ $primaryAccentBackground: rgba(43, 191, 250, 0.2);
                 box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
                 position: relative;
 
-                .edit{
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    padding: 8px;
-                    color: $primaryAccent;
-                    border-radius: 0 0 0 5px;
-                    cursor: pointer;
-                    
-                    &:hover{
-                        background-color: $primaryAccentBackground;
-                    }
-                }
-
                 .positions{
                     display: flex;
                     gap: 30px;
@@ -93,6 +65,23 @@ $primaryAccentBackground: rgba(43, 191, 250, 0.2);
                         .position{
                             margin-bottom: 12px;
                         }
+                    }
+                }
+            }
+
+            .left,.right{
+                .edit{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 8px;
+                    color: $primaryAccent;
+                    border-radius: 0 0 0 5px;
+                    cursor: pointer;
+                    transition: all 0.5s ease;
+                    
+                    &:hover{
+                        background-color: $primaryAccentBackground;
                     }
                 }
             }

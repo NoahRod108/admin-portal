@@ -27,7 +27,7 @@ export const Widget = ({ type }) => {
                 title: "JOB POSITION",
                 linkText: "SEE ALL POSITIONS",
                 link: "/users",
-                icon: <WorkOutlineIcon className='icon' style={{color: "rgb(56, 30, 14)", backgroundColor:"rgb(56, 30, 14, .2)", borderRadius:"50%"}}/>,
+                icon: <WorkOutlineIcon className='icon' style={{color: "rgb(255, 0, 0)", backgroundColor:"rgb(255, 0, 0, .2)", borderRadius:"50%"}}/>,
 
             };
             break;

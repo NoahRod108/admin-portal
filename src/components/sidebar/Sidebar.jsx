@@ -12,7 +12,7 @@ export const Sidebar = () => {
     <div className='sidebar'>
         <div className="top">
             <Link to="/" style={{textDecoration:"none"}}>
-                <span className="logo">Logo</span>
+                <span className="logo">User Management Portal</span>
             </Link>
         </div>
         <hr />
@@ -31,10 +31,6 @@ export const Sidebar = () => {
                 <li><SettingsIcon className='icon'/><span>Settings</span></li>
                 <li><LogoutIcon className='icon'/><span>Logout</span></li>
             </ul>
-        </div>
-        <div className="bottom">
-            <div className="mode"></div>
-            <div className="mode"></div>
         </div>
     </div>
   )

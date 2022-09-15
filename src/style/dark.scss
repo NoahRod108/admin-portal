@@ -9,15 +9,15 @@ $secondaryTextColor: #a4a4a4;
     color: $primaryTextColor;
 
     .navbar{
-        border-bottom: 0.5px solid #fff;
+        border-bottom: 0.5px solid $secondaryTextColor;
     }
 
     .sidebar{
         background-color: $secondaryBackgroundColor;
-        border: 1px solid $secondaryBackgroundColor;
+        border-right: 1px solid $secondaryBackgroundColor;
 
         hr{
-            border-bottom: 0.5px solid $secondaryBackgroundColor;
+            border-color: $secondaryTextColor;
         }
 
         ul{
@@ -30,15 +30,33 @@ $secondaryTextColor: #a4a4a4;
     }
 
     .widget{
+        background-color: $secondaryBackgroundColor;
         -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.158);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.15);
+
+        .right{
+            .icon{
+                background-color: rgb(56, 30, 14);
+            }
+        }
+    }
+
+    .home{
+        .home--container{
+            .list--container{
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.15);
+            }
+        }
     }
 
     .table{
         background-color: $secondaryBackgroundColor;
+        
 
         .tablecell{
             color: #fff;
+            border-bottom: 1px solid $secondaryTextColor;
         }
     }
 
@@ -51,6 +69,137 @@ $secondaryTextColor: #a4a4a4;
         &.non--athlete{
             color: #fff;
             background-color: rgba(255, 0, 0, 0.6);
+        }
+    }
+
+    .user--table{
+        .MuiInputLabel-outlined{
+            color: #fff;
+        }
+
+        .MuiInputBase-input{
+            background-color: $secondaryBackgroundColor;
+            color: $secondaryTextColor;
+
+            span{
+                color: #fff;
+            }
+        }
+
+        svg{
+            color: $secondaryTextColor;
+        }
+    }
+
+    .user--datatable{
+        background-color: $secondaryBackgroundColor;
+        color: #fff;
+        border: 1px solid $secondaryTextColor;
+
+        svg{
+            color: $secondaryTextColor;
+        }
+
+        .MuiTablePagination-root{
+            color: $secondaryTextColor;
+        }
+        
+        .view--item,.delete--item{
+            background-color: $secondaryBackgroundColor;
+            color: $secondaryTextColor;
+            border: none;
+        }
+
+        .view--item{
+            &:hover{
+                background-color: $primaryAccent;
+                color: #fff;
+            }
+        }
+
+        .delete--item{
+            &:hover{
+                background-color: red;
+                color: #fff;
+            }
+        }
+
+        .athlete--status{
+            .non--athlete{
+                color: #fff;
+                background-color: rgba(255, 0, 0, 0.6);
+            }
+
+            .athlete{
+                color: #fff;
+                background-color: rgba(0, 128, 0, 0.6);
+            }
+        }
+    }
+
+    .list{
+        .list--container{
+            .top,.bottom{
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.05);
+            }
+
+            .top{
+                .add--container{
+                    .add--user{
+                        border: none;
+                        color: $secondaryTextColor;
+                        background-color: $primaryBackgroundColor;
+
+                        &:hover{
+                            background-color: green;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .single{
+        .single--container{
+            .top{
+                .left, .right{
+                    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.05);
+                    background-color: $secondaryBackgroundColor;
+
+                    .details{
+                        color: $secondaryTextColor;
+                    }
+                    
+                    .details{
+                        .person--details{
+                            color: $secondaryTextColor;
+
+                            .person--name{
+                                color: $secondaryTextColor;
+                            }
+                        }
+                    }
+                }
+
+                .left,.right{
+                    .edit{
+                        &:hover{
+                            background-color: $primaryAccent;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .bottom{
+                .users--table{
+                    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.05);
+                }
+            }
         }
     }
 }
