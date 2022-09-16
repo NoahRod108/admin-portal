@@ -7,9 +7,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useContext } from "react";
 import "./style/dark.scss";
 import { DarkModeContext } from './context/darkModeContext';
+import { useParams } from 'react-router-dom';
 
 function App() {
     const { darkMode } = useContext(DarkModeContext);
+    const param = useParams();
+
+    console.log(param);
 
   return (
     <div className={darkMode ? "app dark" : "app"}>

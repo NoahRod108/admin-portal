@@ -37,6 +37,7 @@ export const userRows = [
         email: "test@test.com",
         pronoun: "He/Him",
         athlete: true,
+        position: "HR",
     },
     {
         id: 987654321,
@@ -45,6 +46,8 @@ export const userRows = [
         email: "test2@test.com",
         pronoun: "She/Her",
         athlete: false,
+        position: "Help Desk",
+
     },
     {
         id: 852963741,
@@ -53,6 +56,8 @@ export const userRows = [
         email: "test3@test.com",
         pronoun: "He/Him",
         athlete: true,
+        position: "Help Desk",
+
     },
     {
         id: 369258147,
@@ -61,6 +66,8 @@ export const userRows = [
         email: "test4@test.com",
         pronoun: "They/Them",
         athlete: false,
+        position: "Tech Support",
+
     },
     {
         id: 113355889,
@@ -69,5 +76,19 @@ export const userRows = [
         email: "test5@test.com",
         pronoun: "",
         athlete: false,
+        position: "HR",
+
+    },
+];
+
+export const supervisorPositions = [
+    {
+        position: "HR"
+    },
+    {
+        position: "Tech Support"
+    },
+    {
+        position: "Help Desk"
     },
 ];

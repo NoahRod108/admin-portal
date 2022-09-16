@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./single.scss";
 import { Sidebar } from './../../components/sidebar/Sidebar';
 import { Navbar } from './../../components/navbar/Navbar';
 import { Datatable } from './../../components/datatable/Datatable';
+import { useLocation } from 'react-router-dom';
 
-export const Single = () => {
+
+export const Single = (props) => {
+
+    console.log(useLocation.state);
   return (
     <div className="single">
       <Sidebar/>

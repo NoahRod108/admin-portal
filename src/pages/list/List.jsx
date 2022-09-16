@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import "./list.scss";
 import { Sidebar } from './../../components/sidebar/Sidebar';
 import { Navbar } from './../../components/navbar/Navbar';
@@ -9,12 +9,20 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { Link } from 'react-router-dom';
+import { userRows, supervisorPositions } from '../../datasource';
 
 export const List = () => {
-    const [position, setPosition] = React.useState('');
+    const [position, setPosition] = useState('');
+    const [data, setData] = useState(userRows);
+    const INITIAL_STATE = userRows;
+
+    const fetchUserData = (selectedPosition) =>{
+        setData(INITIAL_STATE.filter(job => job.position === selectedPosition));
+    }
 
   const handleChange = (event) => {
     setPosition(event.target.value);
+    fetchUserData(event.target.value);
   };
 
   return (
@@ -43,10 +51,10 @@ export const List = () => {
                                     value={position}
                                     label="Position"
                                     onChange={handleChange}
-                                >
-                                <MenuItem value={10}>HR</MenuItem>
-                                <MenuItem value={20}>Helpdesk</MenuItem>
-                                <MenuItem value={30}>Tech Support</MenuItem>
+                                >        
+                                {supervisorPositions.map((job) => (
+                                    <MenuItem key={job.position} value={job.position}>{job.position}</MenuItem>
+                                ))}
                                 </Select>
                             </FormControl>
                         </Box>
