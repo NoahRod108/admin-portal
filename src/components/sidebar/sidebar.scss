@@ -10,10 +10,11 @@ $primaryAccent: #2bbffa;
     background-color: #fff;
 
     .top{
-        height: 50px;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 1rem;
 
         .logo{
             font-size: 20px;

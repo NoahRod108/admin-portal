@@ -5,11 +5,12 @@ import { userColumns, userRows } from '../../datasource';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
-export const Datatable = (props) => {
+export const Datatable = () => {
     const param = useParams();
     const [data, setData] = useState(userRows);
     const [user, setUser] = useState(userRows);
 
+    // table buttons
     const handleDelete = (id) =>{
         setData(data.filter(item => item.id !== id));
     }
@@ -23,13 +24,13 @@ export const Datatable = (props) => {
       field: "action",
       headerName: "Action", 
       width: 200, 
-      renderCell:(params) => {
+      renderCell:(param) => {
         return(
           <div className="action">
-            <Link to={`/users/${params.row.id}`} state={{singleUser: user}} style={{textDecoration:"none"}}>
+            <Link to={`/admin-portal/users/${param.row.id}`} style={{textDecoration:"none"}}>
                 <div className="view--item" onClick={() => handleSingleUser(param.userId)}>View</div>
             </Link>
-            <div className="delete--item" onClick={() => handleDelete(params.row.id)}>Delete</div>
+            <div className="delete--item" onClick={() => handleDelete(param.row.id)}>Delete</div>
           </div>
         );
       }
@@ -39,13 +40,13 @@ export const Datatable = (props) => {
   return (
     <div className="datatable">
         <DataGrid
-        className='user--datatable'
-        rows={userRows}
-        columns={userColumns.concat(actionColumn)}
-        pageSize={10}
-        rowsPerPageOptions={[10]}
-        checkboxSelection
-      />
+            className='user--datatable'
+            rows={data}
+            columns={userColumns.concat(actionColumn)}
+            pageSize={10}
+            rowsPerPageOptions={[10]}
+            checkboxSelection
+        />
     </div>
   );
 }

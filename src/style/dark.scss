@@ -32,7 +32,7 @@ $secondaryTextColor: #a4a4a4;
     .widget{
         background-color: $secondaryBackgroundColor;
         -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.15);
+        box-shadow: 2px 4px 10px 1px rgba(80, 80, 80, 0.15);
 
         .right{
             .icon{
@@ -45,7 +45,7 @@ $secondaryTextColor: #a4a4a4;
         .home--container{
             .list--container{
                 -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.15);
+                box-shadow: 2px 4px 10px 1px rgba(80, 80, 80, 0.15);
             }
         }
     }
@@ -141,7 +141,7 @@ $secondaryTextColor: #a4a4a4;
         .list--container{
             .top,.bottom{
                 -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.05);
+                box-shadow: 2px 4px 10px 1px rgba(80, 80, 80, 0.05);
             }
 
             .top{
@@ -166,7 +166,7 @@ $secondaryTextColor: #a4a4a4;
             .top{
                 .left, .right{
                     -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-                    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.05);
+                    box-shadow: 2px 4px 10px 1px rgba(80, 80, 80, 0.05);
                     background-color: $secondaryBackgroundColor;
 
                     .details{
@@ -197,7 +197,7 @@ $secondaryTextColor: #a4a4a4;
             .bottom{
                 .users--table{
                     -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-                    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.05);
+                    box-shadow: 2px 4px 10px 1px rgba(80, 80, 80, 0.05);
                 }
             }
         }

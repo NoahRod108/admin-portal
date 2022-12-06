@@ -38,6 +38,7 @@ export const userRows = [
         pronoun: "He/Him",
         athlete: true,
         position: "HR",
+        supervisor: 3
     },
     {
         id: 987654321,
@@ -47,6 +48,7 @@ export const userRows = [
         pronoun: "She/Her",
         athlete: false,
         position: "Help Desk",
+        supervisor: 1
 
     },
     {
@@ -57,6 +59,7 @@ export const userRows = [
         pronoun: "He/Him",
         athlete: true,
         position: "Help Desk",
+        supervisor: 6
 
     },
     {
@@ -67,6 +70,7 @@ export const userRows = [
         pronoun: "They/Them",
         athlete: false,
         position: "Tech Support",
+        supervisor: 2
 
     },
     {
@@ -77,6 +81,7 @@ export const userRows = [
         pronoun: "",
         athlete: false,
         position: "HR",
+        supervisor: 1
 
     },
 ];

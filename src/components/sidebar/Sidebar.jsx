@@ -11,7 +11,7 @@ export const Sidebar = () => {
   return (
     <div className='sidebar'>
         <div className="top">
-            <Link to="/" style={{textDecoration:"none"}}>
+            <Link to="/admin-portal" style={{textDecoration:"none"}}>
                 <span className="logo">User Management Portal</span>
             </Link>
         </div>
@@ -20,11 +20,11 @@ export const Sidebar = () => {
             <ul>
                 <h4 className="title">MAIN</h4>
                 <li><AccountCircleIcon className='icon'/><span>Profile</span></li>
-                <Link to="/" style={{textDecoration:"none"}}>
+                <Link to="/admin-portal" style={{textDecoration:"none"}}>
                     <li><DashboardIcon className='icon'/><span>Dashboard</span></li>
                 </Link>
                 <h4 className="title">USER TABLES</h4>
-                <Link to="/users" style={{textDecoration:"none"}}>
+                <Link to="/admin-portal/users" style={{textDecoration:"none"}}>
                     <li><PeopleAltIcon className='icon'/><span>Users</span></li>
                 </Link>
                 <h4 className="title">OTHER</h4>

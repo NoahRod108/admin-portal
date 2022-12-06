@@ -4,17 +4,17 @@ $primaryAccent: #2bbffa;
 
 .navbar{
     display: flex;
-    height: 50px;
+    height: auto;
     border-bottom: 0.5px solid rgb(230, 230, 230);
     align-items: center;
-    font-size: 12px;
+    font-size: .8rem;
     color: $secondaryTextColor;
 
     .wrapper{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 16px;
+        padding: 1rem;
         width: 100%;
     }
 

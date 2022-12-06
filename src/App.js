@@ -13,13 +13,11 @@ function App() {
     const { darkMode } = useContext(DarkModeContext);
     const param = useParams();
 
-    console.log(param);
-
   return (
     <div className={darkMode ? "app dark" : "app"}>
       <BrowserRouter>
         <Routes>
-          <Route path="/">
+          <Route path="/admin-portal">
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
 

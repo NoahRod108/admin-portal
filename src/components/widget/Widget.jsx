@@ -17,7 +17,7 @@ export const Widget = ({ type }) => {
             data={
                 title: "USERS",
                 linkText: "SEE ALL USERS",
-                link: "/users",
+                link: "/admin-portal/users",
                 icon: <PersonOutlineIcon className='icon' style={{color: "rgb(102, 0, 204)", backgroundColor:"rgb(102, 0, 204, .2)", borderRadius:"50%"}}/>,
 
             };
@@ -26,7 +26,7 @@ export const Widget = ({ type }) => {
             data={
                 title: "JOB POSITION",
                 linkText: "SEE ALL POSITIONS",
-                link: "/users",
+                link: "/admin-portal/users",
                 icon: <WorkOutlineIcon className='icon' style={{color: "rgb(255, 0, 0)", backgroundColor:"rgb(255, 0, 0, .2)", borderRadius:"50%"}}/>,
 
             };
