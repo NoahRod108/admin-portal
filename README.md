@@ -1,7 +1,7 @@
 # Admin Portal
 
 ### Description
-This project is a simple frontend for an admin dashboard. I made this as a concept for my current job. We needed to manage student workers and their data in a single place.
+This project is a simple frontend for an admin dashboard. I made this as a concept to use in a larger project.
 
 This project thas limited functionality and was used as a concept.
 
