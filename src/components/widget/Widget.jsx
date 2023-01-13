@@ -35,7 +35,7 @@ export const Widget = ({ type }) => {
             data={
                 title: "NOTES",
                 linkText: "SEE ALL NOTES",
-                link: "/notes",
+                link: "/admin-portal/users",
                 icon: <NotesIcon className='icon' style={{color: "rgb(255, 204, 0)", backgroundColor:"rgb(255, 204, 0, .2)", borderRadius:"50%"}}/>,
 
             };
